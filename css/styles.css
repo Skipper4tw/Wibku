@@ -37,17 +37,23 @@ header {
 
 header nav .nav-right-section {
     height: auto;
-    display: flex;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(5, 110px);
     align-items: center;
+    justify-items: center;       
     list-style: none;
 }
 
+nav {
+    display: flex;
+    justify-content: space-between;
+}
 nav .nav-right-section a {
     text-align: center;
     margin: 0;
-    padding: 14px 34px; 
+    padding: 0px 0px; 
     text-decoration: none; 
+    
 }
 header .nav-right-section .nav-anchor {
     text-decoration: none;
@@ -87,13 +93,13 @@ header nav .nav-right-section .login {
 header nav .nav-right-section .login-font {
     color: #73f4de;
     font-weight: 600;
+    margin-left: 20px;
+    margin-right: 20px;
 }
 
 header nav .nav-right-section .login:hover {
-    background-color: #73f4de;  
-}
-header nav .nav-right-section .login-font:hover {
-    color: white;
+    background-color: #73f4de;
+    color: white;  
 }
 main {
     margin-top: 50px;
